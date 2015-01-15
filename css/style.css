@@ -18,7 +18,7 @@ body {
     color: #ffffff;
 }
 
-.separated-title {
+h2 {
     margin-bottom: 40px;
 }
 
@@ -45,4 +45,9 @@ body {
 
 .spoiler-body {
     padding: 6px;
+}
+
+.section-id {
+    margin-bottom: 50px;
+
 }
