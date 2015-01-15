@@ -1,7 +1,10 @@
-$.fn.scrollView = function () {
-    return this.each(function () {
-        $('html, body').animate({
-            scrollTop: $(this).offset().top
-        }, 1000);
-    });
-}
+var $root = $('html, body');
+$('a').click(function() {
+        var href = $.attr(this, 'href');
+            $root.animate({
+                        scrollTop: $(href).offset().top
+                    }, 500, function () {
+                                window.location.hash = href;
+                                    });
+                return false;
+});
