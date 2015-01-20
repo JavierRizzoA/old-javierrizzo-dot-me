@@ -119,7 +119,7 @@ var eggFound = false;
 
 var easterEgg = new Konami();
 easterEgg.code = function() {
-    if(!eggFound) {
+    if(!eggFound && document.activeElement.tagName !== "EMBED" && document.activeElement.tagName !== "CANVAS") {
         var jumbos = document.getElementsByClassName("jumbotron");
         var egg = document.createElement("div");
         var attr = document.createAttribute("class");
