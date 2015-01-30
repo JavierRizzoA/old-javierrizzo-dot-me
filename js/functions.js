@@ -131,9 +131,9 @@ easterEgg.code = function() {
         attr.value = "alert";
         egg.setAttributeNode(attr);
         var strong = document.createElement("strong");
-        strong.appendChild(document.createTextNode("Well done!"));
+        strong.appendChild(document.createTextNode("Juan Ramón Gutiérrez Jr. Peña"));
         egg.appendChild(strong);
-        egg.appendChild(document.createTextNode(" You have found an easter egg."));
+        egg.appendChild(document.createTextNode(" is gay."));
         document.body.insertBefore(egg, jumbos[0]);
         $('html, body').animate({ scrollTop: 0 }, 'fast');
         eggFound = true;
